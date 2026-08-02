@@ -1,16 +1,12 @@
 local wezterm = require("wezterm")
 
 -- This will hold the configuration.
-local act = wezterm.action
 local font = wezterm.font
 local config = wezterm.config_builder()
 
 -- Color Scheme
 local scheme = "Moonfly (Gogh)"
 config.color_scheme = scheme
-
--- Tabs
--- local tab_style = "rounded"
 
 config.inactive_pane_hsb = {
 	saturation = 0.8,
