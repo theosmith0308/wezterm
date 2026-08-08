@@ -42,10 +42,11 @@ config.webgpu_preferred_adapter = wezterm.gui.enumerate_gpus()[0]
 config.front_end = "WebGpu"
 
 -- Font Styles
-config.font = font("MesloLGS Nerd Font Mono")
+config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.harfbuzz_features = {
 	"liga = 1",
 }
+
 config.freetype_load_flags = "NO_HINTING"
 config.font_size = 11
 config.hide_mouse_cursor_when_typing = true
